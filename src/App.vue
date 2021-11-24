@@ -3,6 +3,7 @@
     <Header/>
     <ContentBlack/>
     <Main/>
+    <Jumbo/>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from "./components/Header.vue";
 import ContentBlack from "./components/ContentBlack.vue";
 import Main from "./components/Main.vue";
+import Jumbo from "./components/Jumbo.vue";
 
 export default {
   name: "App",
@@ -17,6 +19,7 @@ export default {
     Header,
     ContentBlack,
     Main,
+    Jumbo,
   },
 };
 </script>
