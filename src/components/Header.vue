@@ -3,16 +3,7 @@
     <img src="..\assets\img\dc-logo.png" alt="">
     <div id="listmenu">
         <ul>
-            <li>home</li>
-            <li>asd</li>
-            <li>asd</li>
-            <li>CIao</li>
-            <li>CIao</li>
-            <li>CIao</li>
-            <li>CIao</li>
-            <li>CIao</li>
-            <li>CIao</li>
-            <li>CIao</li>
+            <li v-for= "link, i in links" :key="i">{{link.text}}</li>
         </ul>
     </div>
     
@@ -22,7 +13,71 @@
 <script>
 export default {
   name: "Header",
-  
+  data() {
+      return {
+          links : [
+              {
+                  'text': "CHARACTERS",
+                  'url': "",
+                  'clicked': false
+              },
+
+               {
+                  'text': "COMICS",
+                  'url': "",
+                  'clicked': true
+              },
+
+               {
+                  'text': "MOVIES",
+                  'url': "",
+                  'clicked': false
+              },
+
+               {
+                  'text': "TV",
+                  'url': "",
+                  'clicked': false
+              },
+
+               {
+                  'text': "GAMES",
+                  'url': "",
+                  'clicked': false
+              },
+
+               {
+                  'text': "COLLECTIBLES",
+                  'url': "",
+                  'clicked': false
+              },
+
+               {
+                  'text': "VIDEOS",
+                  'url': "",
+                  'clicked': false
+              },
+
+               {
+                  'text': "FANS",
+                  'url': "",
+                  'clicked': false
+              },
+
+               {
+                  'text': "NEWS",
+                  'url': "",
+                  'clicked': false
+              },
+
+               {
+                  'text': "SHOP",
+                  'url': "",
+                  'clicked': false
+              }
+          ]
+      }
+  }
 };
 </script>
 
@@ -46,16 +101,16 @@ export default {
             li {
                 margin: 10px;
                 font-weight: bold;
+
+                &:hover {
+                    color: #0282f9;
+                }
+
+                &.active {
+                    color: #0282f9;
+                }
             }
         }
         
-    }
-
-    li:hover {
-        color: #0282f9;
-    }
-
-    li.active {
-        color: #0282f9;
     }
 </style>
