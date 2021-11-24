@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header/>
+    <ContentBlack/>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
+import ContentBlack from "./components/ContentBlack.vue";
 
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    ContentBlack,
   },
 };
 </script>
