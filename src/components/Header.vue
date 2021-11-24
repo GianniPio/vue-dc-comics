@@ -3,7 +3,9 @@
     <img src="..\assets\img\dc-logo.png" alt="">
     <div id="listmenu">
         <ul>
-            <li v-for= "link, i in links" :key="i">{{link.text}}</li>
+            <li v-for= "link, i in links" :key="i">
+                <a href="link.url">{{link.text}}</a>
+            </li>
         </ul>
     </div>
   </header>
@@ -83,10 +85,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     header {
-        border: 1px solid black;
         height: 20%;
+        width: 100%;
+        display: block;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 14%;
+        font-size: 12px;
 
         img {
             padding: 20px
@@ -95,14 +100,22 @@ export default {
         #listmenu ul {
             display: flex;
             list-style-type: none;
-            line-height: 700%;
+            line-height: 1000%;
 
             li {
                 margin: 10px;
                 font-weight: bold;
+                
 
-                &:hover {
-                    color: #0282f9;
+                a {
+                    color: black;
+                    text-decoration: none;
+
+                    &:hover {
+                        padding-bottom: 61px;
+                        color: #0282f9;
+                        border-bottom: 5px solid #0282f9;
+                    }
                 }
 
                 &.active {
