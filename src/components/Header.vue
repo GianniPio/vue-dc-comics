@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="..\assets\img\dc-logo.png" alt="">
+    <img src="assets\img\dc-logo.png" alt="ciao">
     <div id="listmenu">
         <ul>
             <li v-for= "link, i in links" :key="i">
@@ -87,7 +87,6 @@ export default {
     header {
         height: 20%;
         width: 100%;
-        display: block;
         display: flex;
         justify-content: space-between;
         padding: 0 14%;
