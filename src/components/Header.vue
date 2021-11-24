@@ -1,13 +1,12 @@
 <template>
-  <div id="header">
+  <header>
     <img src="..\assets\img\dc-logo.png" alt="">
     <div id="listmenu">
         <ul>
             <li v-for= "link, i in links" :key="i">{{link.text}}</li>
         </ul>
     </div>
-    
-  </div>
+  </header>
 </template>
 
 <script>
@@ -83,7 +82,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-    #header {
+    header {
         border: 1px solid black;
         height: 20%;
         display: flex;
