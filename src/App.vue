@@ -2,18 +2,21 @@
   <div id="app">
     <Header/>
     <ContentBlack/>
+    <Main/>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import ContentBlack from "./components/ContentBlack.vue";
+import Main from "./components/Main.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     ContentBlack,
+    Main
   },
 };
 </script>
