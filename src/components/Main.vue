@@ -57,24 +57,25 @@ export default {
         
         ul {
             list-style-type: none;
-            line-height: 800%;
+            line-height: 600%;
             display: flex;
             justify-content: space-between;
 
             img {
                 width: 20%;
                 display: inline-block;
-                margin: 0 10px;
+                vertical-align: middle;
             }
 
             li {
                 
                 margin: 0 20px;
+                width: calc(100% / 5);
 
                 a {
                     text-decoration: none;
                     color: white;
-                    font-size: 12px;
+                    font-size: 10px;
                     display: inline;
                     }
 

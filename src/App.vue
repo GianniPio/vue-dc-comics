@@ -1,9 +1,19 @@
 <template>
   <div id="app">
+
+    <!-- Header della pagina -->
     <Header/>
-    <ContentBlack/>
-    <Main/>
-    <Jumbo/>
+
+    <!-- Parte centrale dalla pagina -->
+    <main>
+      <ContentBlack/>
+      <Main/>
+    </main>
+    
+    <!-- Footer della pagina -->
+    <footer>
+      <Jumbo/>
+    </footer>
   </div>
 </template>
 
