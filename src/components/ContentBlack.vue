@@ -1,7 +1,13 @@
 <template>
-  <div class="card_comics">      
-    <Card v-for="comic, i in comics" :key="i" :details="comic"/>
+  <div id="section_black">
+    <section id="img_jumbo">
+    </section>
+
+    <div class="card_comics">      
+      <Card v-for="comic, i in comics" :key="i" :details="comic"/>
   </div>
+</div>
+  
 </template>
 
 <script>
@@ -96,10 +102,22 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-    .card_comics {
-        background-color: #1c1c1c;
-        padding: 0 14%;
-        color: white;
-    }
+#img_jumbo {
+  background-image: url("../../public/assets/img/jumbotron.jpg");
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  }
+
+  .card_comics {
+    background-color: #1c1c1c;
+    padding: 0 14%;
+    color: white;
+  }
+ 
+
+  
+
+    
     
 </style>
