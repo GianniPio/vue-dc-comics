@@ -25,8 +25,6 @@ export default {
     .card {
         width: calc(100% / 6);
         height: 100%;
-        display: flex;
-        flex-wrap: wrap;
         display: inline-block;
         padding: 2% 0;
 
