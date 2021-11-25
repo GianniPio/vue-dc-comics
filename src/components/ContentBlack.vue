@@ -1,8 +1,11 @@
 <template>
+
   <div id="section_black">
+    <!-- Immagine di Jumbotron -->
     <section id="img_jumbo">
     </section>
 
+    <!-- Sezione della stampa degli elementi dell'array, tramite props -->
     <div class="card_comics">      
       <Card v-for="comic, i in comics" :key="i" :details="comic"/>
   </div>
@@ -11,7 +14,7 @@
 </template>
 
 <script>
-import Card from "@/components/Card.vue";  //ho messo @ perché altrimenti non funziona
+import Card from "@/components/Card.vue";  //ho messo @ perché altrimenti non funziona, import del figlio, da aggiugere poi in components
 
 export default {
  name: "ContentBlack",

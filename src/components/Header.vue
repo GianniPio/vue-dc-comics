@@ -1,6 +1,9 @@
 <template>
   <header>
+      <!-- logo -->
     <img src="assets\img\dc-logo.png" alt="ciao">
+
+    <!-- Menu -->
     <div id="listmenu">
         <ul>
             <li v-for= "link, i in links" :key="i">

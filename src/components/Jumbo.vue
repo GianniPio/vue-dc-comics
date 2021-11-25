@@ -47,9 +47,6 @@
                     </li>
                 </ul>
             </section>
-            
-            
-        
         </section>
 
         <!-- Sezione del secondo sfondo -->

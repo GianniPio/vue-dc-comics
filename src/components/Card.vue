@@ -1,5 +1,8 @@
+// Figlio di ContentBlack, serve per la stampa dell'array
+
 <template>
-  
+
+    <!-- Elemento dell'array -->
   <div class="card">
       <section class="copertina">
           <img :src="details.thumb" :alt="details.series">

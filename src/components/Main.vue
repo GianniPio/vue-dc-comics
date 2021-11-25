@@ -1,5 +1,6 @@
 <template>
   <main>
+      <!-- Stampa elementi array -->
       <ul>
           <li v-for= "link, i in links" :key="i">
               <img :src="link.img" alt=""/>
