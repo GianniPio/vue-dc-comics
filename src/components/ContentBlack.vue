@@ -5,9 +5,17 @@
     <section id="img_jumbo">
     </section>
 
+    <div id="box">
+      <h3>CURRENT SERIES</h3>
+    </div>
+
     <!-- Sezione della stampa degli elementi dell'array, tramite props -->
     <div class="card_comics">      
       <Card v-for="comic, i in comics" :key="i" :details="comic"/>
+  </div>
+
+  <div id="more">
+    <h5>LOAD MORE</h5>
   </div>
 </div>
   
@@ -105,18 +113,54 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-#img_jumbo {
-  background-image: url("../../public/assets/img/jumbotron.jpg");
-  width: 100%;
-  height: 240px;
-  background-size: cover;
-  }
+  #section_black {
 
-  .card_comics {
-    background-color: #1c1c1c;
-    padding: 0 14%;
-    color: white;
+    position: relative;
+
+    #box {
+      width: auto;
+      padding: 10px;
+      background-color: #0282f9;
+      position: absolute;
+      top: 24%;
+      left: 15%;
+      
+       h3 {
+         color: white;
+
+       }
+    }
+
+    #img_jumbo {
+      background-image: url("../../public/assets/img/jumbotron.jpg");
+      width: 100%;
+      height: 240px;
+      background-size: cover;
+      }
+
+    .card_comics {
+      background-color: #1c1c1c;
+      padding: 15px 14% 50px;
+      color: white;
+    }
+
+    #more {
+      position: absolute;
+      background-color: #0282f9;
+      bottom: 1px;
+      left: 50%;
+      padding: 7px 50px;
+      transform: translate(-50%, -50%);
+
+        h5 {
+          color: white;
+          width: auto;
+
+        }
+    }
+
   }
+    
  
 
   
