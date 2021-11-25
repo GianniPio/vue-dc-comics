@@ -5,8 +5,13 @@
 </template>
 
 <script>
+import Card from "./components/Card.vue";
+
 export default {
-  name: "ContentBlack",
+ name: "ContentBlack",
+ components: {
+   Card,
+ }
 }
 </script>
 
