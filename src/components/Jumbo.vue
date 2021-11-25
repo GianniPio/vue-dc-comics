@@ -54,7 +54,6 @@
 
         <!-- Sezione del secondo sfondo -->
         <section id="img_sfondo">
-           <img src="assets/img/dc-logo-bg.png" alt="Sfondo logo DC">
         </section>
       
     </div>
@@ -219,16 +218,16 @@ export default {
 <style scoped lang="scss">
 
     #jumbotron {
-        // background-image: url("/assets/img/footer-bg.jpg");
+        background-image: url("../../public/assets/img/footer-bg.jpg");
         width: 100%;
         height: 400px;
-        padding: 20px 14%;
 
     
         #list {
             float: left;
             width: 50%;
             height: 100%;
+            padding: 20px 0 0 14% ;
 
             #list_left, #list_center, #list_right {
 
@@ -266,14 +265,13 @@ export default {
         }
         
         #img_sfondo {
-            float: right;
-            width: 50%;
+            float: left;
+            width: 40%;
             height: 100%;
-            
-            img {
-                width: 100%;
-                height: 100%;
-            }
+            margin: 0;
+            padding-right: 14%;
+            background-image: url("../../public/assets/img/dc-logo-bg.png");
+            background-size: cover;
         }
     }
     
