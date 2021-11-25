@@ -62,7 +62,7 @@ export default {
             justify-content: space-between;
 
             img {
-                width: 20%;
+                width: 25%;
                 display: inline-block;
                 vertical-align: middle;
             }

@@ -29,10 +29,24 @@
             </section>
 
             <!-- Lista centrale -->
-            <section></section>
+            <section id="list_center">
+                <h1>DC</h1>
+                <ul>
+                    <li v-for="link, i in links_3" :key="i">
+                        <a href="">{{link.text}}</a>
+                    </li>
+                </ul>
+            </section>
 
             <!-- Lista di destra -->
-            <section></section>
+            <section id="list_right">
+                <h1>SITES</h1>
+                <ul>
+                    <li v-for="link, i in links_4" :key="i">
+                        <a href="">{{link.text}}</a>
+                    </li>
+                </ul>
+            </section>
             
             
         
@@ -107,9 +121,95 @@ export default {
                   'text': "Shop DC Collectibles",
                   'url': "",
               }
-          ]
-      }
-  }
+          ],
+
+            links_3 : [
+
+                {
+                  'text': "Terms Of Use",
+                  'url': "",
+                },
+
+               {
+                  'text': "Privacy policy (New)",
+                  'url': "",
+                },
+
+               {
+                  'text': "Ad Choices",
+                  'url': "",
+                },
+
+               {
+                  'text': "Advertising",
+                  'url': "",
+                },
+
+               {
+                  'text': "Jobs",
+                  'url': "",
+                },
+
+               {
+                  'text': "Subscriptions",
+                  'url': "",
+                },
+
+               {
+                  'text': "Talent Workshops",
+                  'url': "",
+                },
+
+                {
+                  'text': "CPSC Certificates",
+                  'url': "",
+                },
+
+               {
+                  'text': "Ratings",
+                  'url': "",
+                },
+
+               {
+                  'text': "Shop Help",
+                  'url': "",
+                },
+
+               {
+                  'text': "Contact Us",
+                  'url': "",
+                }
+            ],
+
+            links_4 : [
+
+                {
+                  'text': "DC",
+                  'url': "",
+                },
+
+                {
+                  'text': "MAD Magazine",
+                  'url': "",
+                },
+
+                {
+                  'text': "DC Kids",
+                  'url': "",
+                },
+
+                {
+                  'text': "DC Universe",
+                  'url': "",
+                },
+
+                {
+                  'text': "DC Power Visa",
+                  'url': "",
+                }
+            ]
+        }
+    }
 };
 </script>
 
@@ -120,18 +220,24 @@ export default {
         background-color: blue;
         width: 100%;
         height: 400px;
-        padding: 0 14%;
+        padding: 20px 14%;
 
     
         #list {
             float: left;
-            width: 40%;
+            width: 50%;
             height: 100%;
+
+            #list_left, #list_center, #list_right {
+
+                float: left;
+                padding: 0 2.5%;
+            }            
 
             h1 {
                 color: white;
                 padding-bottom: 15px;
-                padding: 5% 0 1% 0;
+                padding: 10% 0 3% 0;
             }
 
             ul {
@@ -159,7 +265,7 @@ export default {
         
         #img_sfondo {
             float: right;
-            width: 60%;
+            width: 50%;
             height: 100%;
         }
     }
