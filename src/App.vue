@@ -13,6 +13,7 @@
     <!-- Footer della pagina -->
     <footer>
       <Jumbo/>
+      <Footer/>
     </footer>
   </div>
 </template>
@@ -22,6 +23,7 @@ import Header from "./components/Header.vue";
 import ContentBlack from "./components/ContentBlack.vue";
 import Main from "./components/Main.vue";
 import Jumbo from "./components/Jumbo.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -30,6 +32,7 @@ export default {
     ContentBlack,
     Main,
     Jumbo,
+    Footer,
   },
 };
 </script>
