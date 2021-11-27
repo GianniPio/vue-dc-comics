@@ -7,7 +7,7 @@
     <div id="listmenu">
         <ul>
             <li v-for= "link, i in links" :key="i">
-                <a href="link.url">{{link.text}}</a>
+                <a :class="(link.clicked) ? 'active' : ''" href="link.url">{{link.text}}</a>
             </li>
         </ul>
     </div>
@@ -113,16 +113,14 @@ export default {
                     color: black;
                     text-decoration: none;
 
-                    &:hover {
+                    &:hover, &.active {
                         padding-bottom: 61px;
                         color: #0282f9;
                         border-bottom: 5px solid #0282f9;
                     }
                 }
 
-                &.active {
-                    color: #0282f9;
-                }
+               
             }
         }
         
